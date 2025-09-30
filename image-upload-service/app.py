@@ -6,7 +6,7 @@ import firebase_admin
 
 app = Flask(__name__)
 
-cred = credentials.Certificate('../firebase.json') 
+cred = credentials.Certificate('firebase.json') 
 firebase_admin.initialize_app(cred, {'storageBucket': 'ocr-distributed-system.firebasestorage.app'}) 
 
 ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg']
